@@ -1,62 +1,193 @@
-<!-- ==== index.html (HOME PAGE) ==== -->
+<!-- MODERN HOSPITAL-STYLE WEBSITE DESIGN
+Inspired by Shalamar Hospital Physiotherapy Page
+FREE • HTML + CSS • GitHub Pages Ready
+-->
+
+<!-- ========== index.html (NEW DESIGN) ========== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Move & Run Physiotherapy Center</title>
-<style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f6f6f6; animation: fadeIn 1s ease-in; }
-header { background: #0d4c8b; color: white; padding: 20px; text-align: center; animation: slideDown 1s ease; }
-nav { background: #08345d; padding: 10px; text-align: center; }
-nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-.hero { padding: 60px 20px; text-align: center; background: white; }
-.btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #0d4c8b; color: white; border-radius: 5px; text-decoration: none; }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@keyframes slideDown { from { transform: translateY(-40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Move & Run Physiotherapy Center</title>
+  <meta name="description" content="Professional Physiotherapy & Rehabilitation Services in Lahore with Expert Male & Female Physiotherapists.">
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-.whatsapp-btn {
-position: fixed;
-bottom: 20px;
-right: 20px;
-background: #25d366;
-color: white;
-padding: 12px 20px;
-border-radius: 50px;
-font-size: 16px;
-text-decoration: none;
-font-weight: bold;
-animation: fadeIn 1.2s ease;
-}
-</style>
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f8fc;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d4c8b, #1976d2);
+      color: white;
+      padding: 25px 10%;
+    }
+
+    header h1 { margin: 0; }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 80px 10%;
+      background: white;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .hero h2 { font-size: 42px; color: #0d4c8b; }
+
+    .hero p { font-size: 18px; line-height: 1.6; }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #1976d2;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+    }
+
+    .section {
+      padding: 70px 10%;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0d4c8b;
+      font-size: 32px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover { transform: translateY(-8px); }
+
+    .why {
+      background: #e9f2ff;
+    }
+
+    .contact {
+      background: white;
+      text-align: center;
+    }
+
+    footer {
+      background: #0d4c8b;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      padding: 14px 22px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; text-align: center; }
+    }
+  </style>
 </head>
 <body>
 
-
 <header>
-<h1>Move & Run Physiotherapy Center</h1>
-<p>Professional Physiotherapy & Rehabilitation Services</p>
+  <h1>Move & Run Physiotherapy Center</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-
-<nav>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="about.html">About Us</a>
-<a href="contact.html">Contact</a>
-</nav>
-
-
 <section class="hero">
-<h1>Move Better, Live Better</h1>
-<p>Expert Male & Female Physiotherapists providing quality care.</p>
-<a class="btn" href="contact.html">Book Appointment</a>
+  <div>
+    <h2>Professional Physiotherapy & Rehabilitation</h2>
+    <p>Expert Male & Female Physiotherapists providing advanced, evidence-based treatment to help you move better and live pain-free.</p>
+    <a class="btn" href="contact.html">Book Appointment</a>
+  </div>
 </section>
 
+<section class="section why">
+  <h2>Why Choose Move & Run?</h2>
+  <div class="cards">
+    <div class="card">✔ Certified Male & Female Physiotherapists</div>
+    <div class="card">✔ Modern Equipment & Techniques</div>
+    <div class="card">✔ Personalized Treatment Plans</div>
+    <div class="card">✔ Central Location Near Amanah Mall</div>
+  </div>
+</section>
 
-<a class="whatsapp-btn" href="https://wa.me/923364573256" target="_blank">WhatsApp</a>
+<section class="section">
+  <h2>Our Physiotherapy Services</h2>
+  <div class="cards">
+    <div class="card">Musculoskeletal Rehabilitation</div>
+    <div class="card">Sports Injury Physiotherapy</div>
+    <div class="card">Post-Surgical Rehabilitation</div>
+    <div class="card">Neurological Physiotherapy</div>
+    <div class="card">Pain Management</div>
+    <div class="card">Electrotherapy</div>
+  </div>
+</section>
 
+<section class="section contact">
+  <h2>Visit Our Clinic</h2>
+  <p>30-B Basement, Green Pharmacy, Model Town Link Rd, Opposite Amanah Mall, Lahore</p>
+  <p>📞 0336-4573256 | ✉ muhammad.ahmed@moveandrun.com</p>
+  <a class="btn" href="https://g.co/kgs/H8XPFJX" target="_blank">View on Google Maps</a>
+</section>
+
+<footer>
+  <p>© 2025 Move & Run Physiotherapy Center</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/923364573256" target="_blank">WhatsApp</a>
 
 </body>
 </html>
