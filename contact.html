@@ -1,36 +1,49 @@
-<!-- ==== contact.html ==== -->
+<!-- ========== contact.html ========== -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact - Move & Run</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Move & Run</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.png">
 <style>
-body { font-family: Arial; padding: 20px; }
-form { background: #f8f8f8; padding: 20px; border-radius: 10px; max-width: 400px; }
-input, textarea { width: 100%; padding: 10px; margin: 10px 0; }
-button { padding: 10px; background: #0d4c8b; color: white; border: none; cursor: pointer; }
+body{font-family:Poppins,sans-serif;margin:0;background:#f5f8fc}
+header{background:#0d4c8b;color:#fff;padding:20px 10%}
+nav a{color:#fff;margin-right:20px;text-decoration:none}
+.section{padding:70px 10%}
+form{background:#fff;padding:30px;border-radius:15px;max-width:450px}
+input,textarea{width:100%;padding:12px;margin:10px 0}
+button{background:#1976d2;color:#fff;padding:12px;border:none;border-radius:30px;width:100%}
+footer{background:#0d4c8b;color:#fff;text-align:center;padding:25px}
 </style>
 </head>
 <body>
+<header>
+<h1>Contact Us</h1>
 <nav>
-<a href="index.html">Home</a> |
-<a href="services.html">Services</a> |
-<a href="about.html">About</a> |
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
 <a href="contact.html">Contact</a>
 </nav>
-<h1>Contact Us</h1>
-<p><strong>Address:</strong> 30-B Basement, Green Pharmacy, Model Town Link Rd, Lahore</p>
-<p><strong>Phone:</strong> 0336-4573256</p>
-<p><strong>Email:</strong> muhammad.ahmed@moveandrun.com</p>
-<a class="btn" href="https://g.co/kgs/H8XPFJX">Google Maps</a>
+</header>
 
+<section class="section">
+<p><strong>Address:</strong> 30‑B Basement, Green Pharmacy, Model Town Link Rd, Opposite Amanah Mall, Lahore</p>
+<p><strong>Phone:</strong> 0336‑4573256</p>
+<p><strong>Email:</strong> muhammad.ahmed@moveandrun.com</p>
+<a href="https://g.co/kgs/H8XPFJX" target="_blank">📍 View on Google Maps</a>
 
 <h2>Book Appointment</h2>
 <form>
 <input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Email" required>
 <input type="tel" placeholder="Phone Number" required>
 <textarea placeholder="Your Message" required></textarea>
 <button type="submit">Submit</button>
 </form>
+</section>
+
+<footer>© 2025 Move & Run Physiotherapy Center</footer>
 </body>
 </html>

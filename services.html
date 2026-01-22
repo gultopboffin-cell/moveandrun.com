@@ -1,31 +1,44 @@
-<!-- ==== services.html ==== -->
+<!-- ========== services.html ========== -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Services - Move & Run</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Physiotherapy Services | Move & Run</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.png">
 <style>
-body { font-family: Arial; padding: 20px; background: #f6f6f6; }
-.section { background: white; padding: 20px; border-radius: 10px; }
+body{font-family:Poppins,sans-serif;margin:0;background:#f5f8fc}
+header{background:#0d4c8b;color:#fff;padding:20px 10%}
+nav a{color:#fff;margin-right:20px;text-decoration:none}
+.section{padding:70px 10%}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+footer{background:#0d4c8b;color:#fff;text-align:center;padding:25px}
 </style>
 </head>
 <body>
+<header>
+<h1>Our Physiotherapy Services</h1>
 <nav>
-<a href="index.html">Home</a> |
-<a href="services.html">Services</a> |
-<a href="about.html">About</a> |
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
 <a href="contact.html">Contact</a>
 </nav>
-<h1>Our Services</h1>
-<div class="section">
-<ul>
-<li>Manual Therapy</li>
-<li>Pain Management</li>
-<li>Musculoskeletal Rehab</li>
-<li>Post-Surgical Rehabilitation</li>
-<li>Neurological Rehab</li>
-<li>Sports Injury Rehab</li>
-<li>Electrotherapy</li>
-</ul>
+</header>
+
+<section class="section">
+<div class="cards">
+<div class="card">🦴 Musculoskeletal Rehabilitation</div>
+<div class="card">🏃 Sports Injury Physiotherapy</div>
+<div class="card">🧠 Neurological Physiotherapy</div>
+<div class="card">🩺 Post‑Surgical Rehabilitation</div>
+<div class="card">⚡ Electrotherapy & Pain Relief</div>
+<div class="card">🧘 Posture & Movement Correction</div>
 </div>
+</section>
+
+<footer>© 2025 Move & Run Physiotherapy Center</footer>
 </body>
 </html>
