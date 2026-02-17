@@ -28,32 +28,38 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* SLIDER */
+
+}
+
+/* SLIDER FIXED */
 .slider {
   width: 100%;
-  height: 500px;
-  overflow: hidden;
+  overflow: hidden;       /* hide extra content */
   position: relative;
 }
 
 .slides {
-  display: flex;
-  width: 200%;   /* Because you have 2 images */
-  height: 100%;
+  display: flex;          /* align slides horizontally */
   transition: transform 1s ease-in-out;
+  /* remove fixed width like 200%; flex will handle any number of slides */
 }
 
 .slide {
-  width: 100%;
-  flex-shrink: 0;
+  min-width: 100%;        /* each slide takes full container width */
+  display: flex;
+  justify-content: center; /* center image horizontally */
+  align-items: center;     /* center image vertically */
+  flex-shrink: 0;          /* prevent shrinking */
 }
 
 .slide img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  object-position: center;
+  width: 100%;            /* fill container width */
+  height: auto;           /* maintain aspect ratio */
+  max-height: 500px;      /* optional max height */
+  object-fit: cover;      /* crop if needed */
+  display: block;
 }
+
 
 
 /* HERO SECTION */
