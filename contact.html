@@ -143,10 +143,10 @@
 
   <!-- Form -->
   <h2>Book Appointment</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="tel" placeholder="Phone Number" required>
-    <textarea placeholder="Your Message" required></textarea>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
     <button type="submit">Submit</button>
   </form>
 </section>
