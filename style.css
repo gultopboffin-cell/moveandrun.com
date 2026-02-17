@@ -31,35 +31,34 @@ nav a:hover {
 
 }
 
-/* SLIDER FIXED */
+
+
+/* SLIDER */
 .slider {
   width: 100%;
-  overflow: hidden;       /* hide extra content */
+  overflow: hidden;
   position: relative;
 }
 
 .slides {
-  display: flex;          /* align slides horizontally */
+  display: flex;               /* horizontally align slides */
   transition: transform 1s ease-in-out;
-  /* remove fixed width like 200%; flex will handle any number of slides */
 }
 
 .slide {
-  min-width: 100%;        /* each slide takes full container width */
+  min-width: 100%;            /* full-screen width */
+  height: 500px;              /* keep your preferred height */
   display: flex;
-  justify-content: center; /* center image horizontally */
-  align-items: center;     /* center image vertically */
-  flex-shrink: 0;          /* prevent shrinking */
+  justify-content: center;     /* center image horizontally */
+  align-items: center;         /* center image vertically */
+  flex-shrink: 0;              /* no shrink */
 }
 
 .slide img {
-  width: 100%;            /* fill container width */
-  height: auto;           /* maintain aspect ratio */
-  max-height: 500px;      /* optional max height */
-  object-fit: cover;      /* crop if needed */
-  display: block;
+  width: auto;               /* auto width so it doesn’t stretch */
+  height: 100%;             /* full container height */
+  object-fit: cover;         /* maintain aspect ratio & cover */
 }
-
 
 
 /* HERO SECTION */
