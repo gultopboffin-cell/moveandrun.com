@@ -10,6 +10,8 @@ FREE • HTML + CSS • GitHub Pages Ready
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Move & Run Physiotherapy Center</title>
+  <link rel="stylesheet" href="style.css">
+
   <meta name="description" content="Professional Physiotherapy & Rehabilitation Services in Lahore with Expert Male & Female Physiotherapists.">
 
   <!-- Google Font -->
@@ -48,6 +50,9 @@ FREE • HTML + CSS • GitHub Pages Ready
       text-decoration: none;
       font-weight: 500;
     }
+
+
+
 
     .hero {
       display: grid;
@@ -149,6 +154,22 @@ FREE • HTML + CSS • GitHub Pages Ready
   </nav>
 </header>
 
+<section class="slider">
+  <div class="slides">
+    
+    <div class="slide">
+      <img src="image/image1.jpg" alt="Physiotherapy Treatment">
+    </div>
+
+    <div class="slide">
+      <img src="image/image2.jpg" alt="Rehabilitation Therapy">
+    </div>
+
+  </div>
+</section>
+
+
+
 
 <section class="hero">
   <div class="hero-content">
@@ -192,7 +213,7 @@ FREE • HTML + CSS • GitHub Pages Ready
 <section class="section contact">
   <h2>Visit Our Clinic</h2>
   <p>30-B Basement, Green Pharmacy, Model Town Link Rd, Opposite Amanah Mall, Lahore</p>
-  <p>📞 0309-4193733 | ✉ muhammad.ahmed@moveandrun.com</p>
+  <p>📞 0336-4573256 | ✉ muhammad.ahmed@moveandrun.com</p>
   <a class="btn" href="https://g.co/kgs/H8XPFJX" target="_blank">View on Google Maps</a>
 </section>
 
@@ -202,9 +223,23 @@ FREE • HTML + CSS • GitHub Pages Ready
 
 <a class="whatsapp" href="https://wa.me/923364573256" target="_blank">WhatsApp</a>
 
+<script>
+  let index = 0;
+  const slides = document.querySelector(".slides");
+  const totalSlides = document.querySelectorAll(".slide").length;
+
+  setInterval(() => {
+    index++;
+    if (index >= totalSlides) {
+      index = 0;
+    }
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }, 3000);
+</script>
+
+
 </body>
 </html>
-
 
 
 
