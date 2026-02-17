@@ -143,11 +143,17 @@
 
   <!-- Form -->
   <h2>Book Appointment</h2>
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <form action="https://formspree.io/f/xkovbyna" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="tel" name="phone" placeholder="Phone Number" required>
     <textarea name="message" placeholder="Your Message" required></textarea>
     <button type="submit">Submit</button>
+
+    <!-- Optional: Custom email subject -->
+    <input type="hidden" name="_subject" value="New Inquiry from Move & Run Website">
+
+    <!-- Optional: Redirect to thank-you page after submit -->
+    <input type="hidden" name="_next" value="https://moveandrun.com/thank-you.html">
   </form>
 </section>
 
